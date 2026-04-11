@@ -1,8 +1,64 @@
 :root{    
-
+--accent-color:#2196F3;
+--title-color:#212121;
+--text-color:#757575;
 }
 body {
 
-font-family: ‘Roboto’;
+font-family: "Roboto", sans-serif;
+}
+.header-logo {
+color: #000;
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.19;
+letter-spacing: 0.78px;
+text-decoration:none;
+}
+.header-link{
+color: var(--title-color);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.28px;
+text-decoration: none;
+}
+.hero{
+    background: #2F303A;
 
+}
+.hero-title{
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 44px;
+font-style: normal;
+font-weight: 900;
+line-height: 1.36;
+letter-spacing: 2.64px;
+text-transform: uppercase;
+
+}
+.features-item{
+    color: var(--title-color);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+list-style: none;
+}
+.features-text{
+    color: var(--text-color);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.42px;
 }
