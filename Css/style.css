@@ -7,7 +7,17 @@ body {
 
 font-family: "Roboto", sans-serif;
 }
-.header-logo {
+.header-contacts{
+color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.42px;
+    
+}
+.logo {
 color: #000;
 font-family: Raleway;
 font-size: 26px;
@@ -35,7 +45,6 @@ text-decoration: none;
 .hero-title{
 flex-shrink: 0;
 color: #FFF;
-text-align: center;
 font-family: Roboto;
 font-size: 44px;
 font-style: normal;
@@ -48,7 +57,6 @@ text-transform: uppercase;
 .hero-button{
 width: 216.0px;
 height: 50.0px;
-text-align: center;
 background-color:var(--accent-color);
 color: #FFF;
 font-family: Roboto;
@@ -80,7 +88,6 @@ letter-spacing: 0.42px;
 }
 .gallery-title{
 color: var(--title-color);
-text-align: center;
 font-family: Roboto;
 font-size: 36px;
 font-style: normal;
@@ -94,7 +101,6 @@ letter-spacing: 1.08px;
 }
 .team-list{
     list-style: none;
-    text-align: center;
 }
 .team-img{
 width: 270.0px;
@@ -102,7 +108,6 @@ height: 260.0px;
 }
 .team-title{
 color: var(--title-color);
-text-align: center;
 font-family: Roboto;
 font-size: 36px;
 font-style: normal;
@@ -113,7 +118,6 @@ letter-spacing: 1.08px;
 }
 .team-name{
 color: var(--title-color);
-text-align: center;
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
@@ -124,7 +128,6 @@ letter-spacing: 0.48px;
 }
 .team-text{
 color:var(--text-color);
-text-align: center;
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
