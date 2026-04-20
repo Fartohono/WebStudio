@@ -17,7 +17,7 @@ line-height: 1.71;
 letter-spacing: 0.42px;
     
 }
-.logo {
+.header-logo {
 color: #000;
 font-family: Raleway;
 font-size: 26px;
@@ -25,6 +25,9 @@ font-weight: 700;
 line-height: 1.19;
 letter-spacing: 0.78px;
 text-decoration:none;
+}
+.header-logo-blue{
+color: #2196f3;    
 }
 .header-list{
     list-style: none;
@@ -151,7 +154,7 @@ letter-spacing: 0.42px;
 
 }
 .contacts-email{
-    color:#FFF;
+    color: rgba(255, 255, 255, 0.60);
 font-family: Roboto;
 font-size: 14px;
 font-style: normal;
@@ -211,5 +214,17 @@ font-weight: 400;
 line-height: 1.85;
 letter-spacing: 0.48px;
 
+}
+.footer-logo{
+color: #FFF;
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: 1.19;
+letter-spacing: 0.78px;
+text-decoration:none;    
+}
+.footer-logo-blue{
+color: #2196f3;  
 }
 
