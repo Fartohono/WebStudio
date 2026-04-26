@@ -2,13 +2,20 @@
 --accent-color:#2196F3;
 --title-color:#212121;
 --text-color:#757575;
+--text-white:#FFF;
 }
 body {
 
 font-family: "Roboto", sans-serif;
 }
-.header-contacts{
-color: rgba(255, 255, 255, 0.60);
+.header{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.header-contacts-email{
+color: var(--text-color);
 font-family: Roboto;
 font-size: 14px;
 font-style: normal;
@@ -16,6 +23,16 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
     
+}
+.header-contacts-tel {
+    color: var(--text-color); 
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+
 }
 .header-logo {
 color: #000;
@@ -27,13 +44,20 @@ letter-spacing: 0.78px;
 text-decoration:none;
 }
 .header-logo-blue{
-color: #2196f3;    
+color: var(--accent-color);    
 }
 .header-list{
     list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.header-contacts{
+display: flex;
+list-style: none;
+gap: 50px;
 }
 .header-link{
-color: var(--title-color);
+    color: var(--title-color);
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -43,11 +67,13 @@ text-decoration: none;
 }
 .hero{
     background: #2F303A;
-
+display:flex;
+justify-content: center;
+flex-direction: column;
 }
 .hero-title{
 flex-shrink: 0;
-color: #FFF;
+color: var(--text-white);
 font-family: Roboto;
 font-size: 44px;
 font-style: normal;
@@ -55,19 +81,24 @@ font-weight: 900;
 line-height: 1.36;
 letter-spacing: 2.64px;
 text-transform: uppercase;
-
+display: flex;
+justify-content: center;
 }
 .hero-button{
 width: 216.0px;
 height: 50.0px;
 background-color:var(--accent-color);
-color: #FFF;
+color: var(--text-white);
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
 line-height: 1.87;
 letter-spacing: 0.96px;
+}
+.features{
+display: flex;
+    gap: 30px;
 }
 .features-item{
     color: var(--title-color);
@@ -79,6 +110,7 @@ line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 list-style: none;
+flex: 1;
 }
 .features-text{
     color: var(--text-color);
@@ -97,13 +129,21 @@ font-style: normal;
 font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
-
+display: flex;
+justify-content: center;
 }
 .gallery-list{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
+
 .team-list{
     list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 .team-img{
 width: 270.0px;
@@ -117,7 +157,8 @@ font-style: normal;
 font-weight: 700;
 line-height: 1.16;
 letter-spacing: 1.08px;
-
+display: flex;
+justify-content: center;
 }
 .team-name{
 color: var(--title-color);
@@ -127,7 +168,8 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.18;
 letter-spacing: 0.48px;
-
+display: flex;
+justify-content: center;
 }
 .team-text{
 color:var(--text-color);
@@ -137,13 +179,20 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
-
+display: flex;
+justify-content: center;
 }
 .footer{
     background-color: #2F303A;
+    padding: 0%;
+    height: 1000px;
+    padding-left: 215px;
+}
+.contacts{
+list-style: none;
 }
 .contacts-address{
-color: white;          
+color: var(--text-white);
 text-decoration: none;
 font-family: Roboto;
 font-size: 14px;
@@ -151,7 +200,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
-
+display: flex;
+justify-content: start;
+padding-top: 20px;
 }
 .contacts-email{
     color: rgba(255, 255, 255, 0.60);
@@ -161,6 +212,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
+
 }
 .contacts-tel{
     color: rgba(255, 255, 255, 0.60);
@@ -216,15 +268,17 @@ letter-spacing: 0.48px;
 
 }
 .footer-logo{
-color: #FFF;
+color: var(--text-white);
 font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.19;
 letter-spacing: 0.78px;
-text-decoration:none;    
+text-decoration:none;
+display: flex;
+padding-top: 60px;   
 }
 .footer-logo-blue{
-color: #2196f3;  
+color: var(--accent-color);  
 }
 
