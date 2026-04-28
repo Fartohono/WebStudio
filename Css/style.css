@@ -319,5 +319,13 @@ padding-top: 60px;
 }
 .footer-logo-blue{
 color: var(--accent-color);  
+}  
+.header-link:hover{
+color: var(--accent-color);    
 }
-
+.header-contacts-email:hover{
+color: var(--accent-color);
+}
+.header-contacts-tel:hover{
+color: var(--accent-color);
+}
