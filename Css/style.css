@@ -329,3 +329,6 @@ color: var(--accent-color);
 .header-contacts-tel:hover{
 color: var(--accent-color);
 }
+.container{
+    outline: 2px dashed red;
+}
