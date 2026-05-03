@@ -359,3 +359,6 @@ align-items: center;
 justify-content: center;
 flex-direction: column;   
 }
+.portfolio .container{
+margin-bottom: 94px;      
+}
