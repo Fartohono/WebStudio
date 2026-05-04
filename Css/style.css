@@ -71,6 +71,7 @@ height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+text-align: center;
 gap: 30px;
 }
 .hero-title{
@@ -112,7 +113,7 @@ padding-bottom: 94px;
     display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+justify-content: space-between;
   align-content: center;
     gap: 30px;
 }
@@ -160,6 +161,8 @@ padding-bottom: 50px;
     gap: 30px;
 }
 .team{
+    background-color: #F5F4FA;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .team-list{
@@ -172,6 +175,9 @@ padding-bottom: 50px;
 width: 270.0px;
 height: 260.0px;
 
+}
+.team-item{
+background-color: var(--text-white) ;
 }
 .team-title{
 color: var(--title-color);
@@ -215,9 +221,11 @@ padding: 10px;
     padding: 0%;
     height: 350px;
     padding-left: 215px;
+
 }
 .contacts{
 list-style: none;
+gap: 9px;
 }
 .contacts-address{
 color: var(--text-white);
@@ -285,8 +293,8 @@ flex-wrap: wrap;
 gap: 30px;
 }
 .portfolio-img{
-width: 370.0px;
-height: 294.0px;
+width: 100%;
+height: auto;
 
 }
 .portfolio-title{
@@ -333,10 +341,19 @@ color: var(--accent-color);
 .header-contacts-tel:hover{
 color: var(--accent-color);
 }
+.fillters-button:hover{
+color: var(--text-white);
+background-color: var(--accent-color);
+}
 .container{
     outline: 2px dashed red;
+    width: auto;
+    max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
 }
 .header .container {
+    padding-left: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
