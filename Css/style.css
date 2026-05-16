@@ -9,7 +9,8 @@ body {
 font-family: "Roboto", sans-serif;
 }
 .header{
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 .header-contacts-email{
 color: var(--text-color);
@@ -66,7 +67,8 @@ letter-spacing: 0.28px;
 text-decoration: none;
 }
 .hero{
-height: 500px;  
+padding-top: 200px;
+padding-bottom: 280px;
     background: #2F303A;
   display: flex;
   align-items: center;
@@ -219,8 +221,6 @@ padding: 10px;
     background-color: #2F303A;
     padding-top: 94px;
     padding: 0%;
-    height: 350px;
-    padding-left: 215px;
 
 }
 .contacts{
@@ -348,12 +348,11 @@ background-color: var(--accent-color);
 .container{
     outline: 2px dashed red;
     width: auto;
-    max-width: 1200px;
+    width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
 }
 .header .container {
-    padding-left: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
