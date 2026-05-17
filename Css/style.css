@@ -24,6 +24,8 @@ letter-spacing: 0.42px;
 }
 .header-navigation{
 display: flex;
+margin-right: 344px;
+margin-left: 93px;
 }
 .header-contacts-tel {
     color: var(--text-color); 
@@ -219,7 +221,6 @@ padding: 10px;
 }
 .footer{
     background-color: #2F303A;
-    padding-top: 94px;
     padding: 0%;
 
 }
@@ -326,8 +327,7 @@ font-weight: 700;
 line-height: 1.19;
 letter-spacing: 0.78px;
 text-decoration:none;
-display: flex;
-padding-top: 60px;   
+display: flex;  
 }
 .footer-logo-blue{
 color: var(--accent-color);  
@@ -347,7 +347,6 @@ background-color: var(--accent-color);
 }
 .container{
     outline: 2px dashed red;
-    width: auto;
     width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
@@ -355,7 +354,6 @@ background-color: var(--accent-color);
 .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .hero .container{
 display: flex;
