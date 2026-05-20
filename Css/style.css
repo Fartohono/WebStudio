@@ -9,8 +9,8 @@ body {
 font-family: "Roboto", sans-serif;
 }
 .header{
-    padding-top: 15px;
-    padding-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .header-contacts-email{
 color: var(--text-color);
@@ -24,7 +24,7 @@ letter-spacing: 0.42px;
 }
 .header-navigation{
 display: flex;
-margin-right: 344px;
+margin-right: auto;
 margin-left: 93px;
 }
 .header-contacts-tel {
@@ -105,6 +105,7 @@ letter-spacing: 0.96px;
 display: flex;
 justify-content: center;
 align-items: center;
+border-radius: 5px;
 }
 .features{
 display: flex;
@@ -113,13 +114,11 @@ padding-bottom: 94px;
     gap: 30px;
 }
 .features-list{
-  gap: 30px;
     display: flex;
   flex-direction: row;
   align-items: center;
 justify-content: space-between;
   align-content: center;
-    gap: 30px;
 }
 .features-item{
     color: var(--title-color);
@@ -193,7 +192,7 @@ line-height: 1.16;
 letter-spacing: 1.08px;
 display: flex;
 justify-content: center;
-padding-bottom: 50px;
+margin-bottom: 50px;
 }
 .team-name{
 color: var(--title-color);
@@ -205,7 +204,7 @@ line-height: 1.18;
 letter-spacing: 0.48px;
 display: flex;
 justify-content: center;
-padding-top: 30px;
+margin-top: 30px;
 }
 .team-text{
 color:var(--text-color);
@@ -217,16 +216,15 @@ line-height: 1.18;
 letter-spacing: 0.48px;
 display: flex;
 justify-content: center;
-padding: 10px;
+margin: 10px;
 }
 .footer{
     background-color: #2F303A;
-    padding: 0%;
+    margin: 0%;
 
 }
 .contacts{
 list-style: none;
-gap: 9px;
 }
 .contacts-address{
 color: var(--text-white);
@@ -239,7 +237,8 @@ line-height: 1.71;
 letter-spacing: 0.42px;
 display: flex;
 justify-content: start;
-padding-top: 20px;
+margin-top: 20px;
+margin-bottom: 9px;
 }
 .contacts-email{
     color: rgba(255, 255, 255, 0.60);
@@ -249,7 +248,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
-
 }
 .contacts-tel{
     color: rgba(255, 255, 255, 0.60);
@@ -260,12 +258,15 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
 }
+.contacts-item:nth-child(2){
+    margin-bottom: 9px;
+}
 .fillters{
 display: flex;
 justify-content: center;
 flex-direction: row;
-padding-top: 94px;
-padding-bottom: 50px;
+margin-top: 94px;
+margin-bottom: 50px;
 }
 .fillters-list{
 list-style: none;
@@ -284,6 +285,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
+border-radius: 5px;
 }
 .portfolio-list{
 list-style: none;
