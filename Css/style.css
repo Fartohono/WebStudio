@@ -141,6 +141,9 @@ justify-content: space-between;
   align-content: center;
   gap: 30px;
 }
+.features-title{
+    margin-bottom: 10px;
+}
 .features-item{
     color: var(--title-color);
 font-family: Roboto;
@@ -242,7 +245,8 @@ margin-bottom: 30px;
 .footer{
     background-color: #2F303A;
     margin: 0%;
-
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .contacts{
 list-style: none;
@@ -328,6 +332,12 @@ width: 31.5%;
 }
 .wrapper{
     position: relative;
+}
+.wrap{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .over{
     position: absolute;
