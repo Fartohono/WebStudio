@@ -47,6 +47,20 @@ font-weight: 700;
 line-height: 1.19;
 letter-spacing: 0.78px;
 text-decoration:none;
+animation-duration: 3000ms;
+animation-name: LogoScale;
+animation-iteration-count: infinite;
+}
+@keyframes LogoScale{
+0%{
+scale: 1;
+}
+50%{
+scale: 1.15;
+}
+100%{
+scale: 1;
+}
 }
 .header-logo-blue{
 color: var(--accent-color);    
@@ -154,7 +168,20 @@ line-height: 1.14;
 letter-spacing: 0.42px;
 list-style: none;
 flex: 1;
-
+}
+@keyframes ftItemShake{
+25%{
+    transform: rotate(1deg);
+}
+50%{
+    transform: rotate(0);
+}
+75%{
+    transform: rotate(-1deg);
+}
+100%{
+transform: rotate(0);
+}
 }
 .features-text{
     color: var(--text-color);
@@ -186,6 +213,10 @@ margin-bottom: 50px;
     justify-content: center;
     gap: 30px;
 }
+.gallery-item{
+    animation-duration: 5000ms;
+animation-name: ftItemShake;
+}
 .team{
     background-color: #F5F4FA;
     padding-top: 94px;
@@ -205,6 +236,7 @@ height: 260.0px;
 .team-item{
 background-color: var(--text-white) ;
 }
+@keyframes tItem
 .team-title{
 color: var(--title-color);
 font-family: Roboto;
@@ -440,3 +472,4 @@ display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
+
