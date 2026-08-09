@@ -11,8 +11,9 @@ body {
 font-family: "Roboto", sans-serif;
 }
 .header{
-    padding-top: 24px;
-    padding-bottom: 25px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .header-contacts-email{
 color: var(--text-color);
@@ -26,9 +27,8 @@ animation-duration: 3000ms;
 animation-name: LogoScale;    
 }
 .header-navigation{
-display: flex;
-margin-right: auto;
-margin-left: 93px;
+display: none;
+text-decoration: none;
 }
 .header-contacts-tel {
     color: var(--text-color); 
@@ -53,6 +53,7 @@ animation-name: LogoScale;
 
 .header-logo {
 color: #000; 
+margin-right: auto;
 font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
@@ -542,6 +543,18 @@ display: flex;
     .container{
         width: 768px;
     }
+    .header{
+    display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+.header-logo{
+    margin-right: 88px;
+}
+.header-navigation{
+    display: block;
+}
+}
     .features-item{
         width: 354.0px;
     }
@@ -552,7 +565,7 @@ display: flex;
         
         grid-template-columns: repeat(2, 1fr);
     }
-}
+
 
 
 
@@ -560,6 +573,16 @@ display: flex;
     .container{
         width: 1200px;
     }
+    .header{
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-logo{
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+}
     .features{
 padding-top: 94px;
 padding-bottom: 94px;
