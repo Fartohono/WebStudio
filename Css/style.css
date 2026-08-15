@@ -58,7 +58,7 @@ font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.19;
-letter-spacing: 0.78px;
+letter-spacing: 0.72px;
 text-decoration:none;
 animation-duration: 3000ms;
 animation-name: LogoScale;
@@ -83,9 +83,10 @@ color: var(--accent-color);
     list-style: none;
     display: flex;
     gap: 50px;
+    
 }
 .header-contacts{
-display: flex;
+display: none;
 list-style: none;
 gap: 50px;
 }
@@ -552,8 +553,16 @@ display: flex;
     margin-right: 88px;
 }
 .header-navigation{
-    display: block;
+    display: block  ;
 }
+.header-navigation{
+display: block;
+text-decoration: none;
+}
+.header-contacts{
+display: flex;
+list-style: none;
+gap: 50px;
 }
     .features-item{
         width: 354.0px;
@@ -566,6 +575,7 @@ display: flex;
         grid-template-columns: repeat(2, 1fr);
     }
 
+}
 
 
 
