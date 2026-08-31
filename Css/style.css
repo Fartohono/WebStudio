@@ -124,7 +124,10 @@ height: 40.0px;
 .hero{
 padding-top: 118px;
 padding-bottom: 118px;
-    background: #2F303A;
+background-image: url(./Img.png);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,6 +265,7 @@ margin-bottom: 50px;
     gap: 30px;
 }
 .gallery-item{
+    
     animation-duration: 5000ms;
 animation-name: glItemScale;
 }
@@ -279,9 +283,13 @@ grid-template-columns: 100%;
 }
 
 .team-item{
-background-color: var(--text-white) ;
+border-radius: 0 0 4px 4px;
+background: var(--text-white);
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
+
 animation-duration: 3000ms;
 animation-name: tItemScale;
+
 }
 @keyframes tItemScale{
     0%{
@@ -575,7 +583,12 @@ text-decoration: none;
 .hero{
 padding-top: 118px;
 padding-bottom: 118px;
-    background: #2F303A;
+background-image: url(./Img.png);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: rgba(47, 48, 58, 0.40);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -686,7 +699,10 @@ gap: 50px;
     .hero{
 padding-top: 200px;
 padding-bottom: 200px;
-    background: #2F303A;
+background-image: url(./Img.png) ;
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
