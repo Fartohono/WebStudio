@@ -64,6 +64,16 @@ animation-duration: 3000ms;
 animation-name: LogoScale;
 animation-iteration-count: infinite;
 }
+.header-icons{
+    width: 16.0px;
+height: 12.0px;
+fill: var(--text-color);
+}
+.header-contacts-tel{
+    width: 16.0px;
+height: 10.0px;
+
+}
 @keyframes LogoScale{
 0%{
 scale: 1;
