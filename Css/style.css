@@ -30,6 +30,7 @@ animation-name: LogoScale;
 display: none;
 text-decoration: none;
 }
+
 .header-contacts-tel {
     color: var(--text-color); 
     font-family: Roboto;
@@ -42,6 +43,7 @@ text-decoration: none;
 
 
 }
+
 .header-item{
     animation-duration: 3000ms;
 animation-name: LogoScale;
@@ -49,6 +51,7 @@ animation-name: LogoScale;
 .header-contacts-item{
     animation-duration: 3000ms;
 animation-name: LogoScale;
+    gap: 10px;
 }
 
 .header-logo {
@@ -67,7 +70,17 @@ animation-iteration-count: infinite;
 .header-icons{
     width: 16.0px;
 height: 12.0px;
-fill: var(--text-color);
+fill: currentColor;
+
+}
+.header-contacts-link {
+
+    color: #757575;
+    text-decoration: none;
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: #2196F3;
 }
 .header-contacts-tel{
     width: 16.0px;
@@ -301,6 +314,23 @@ animation-duration: 3000ms;
 animation-name: tItemScale;
 
 }
+.team-items{
+display: flex;
+align-items: flex-end;
+justify-content: center;    
+padding-bottom: 30px;
+gap: 36px;
+}
+.team-icon{
+    width: 20.0px;
+height: 20.0px;
+fill: #AFB1B8;
+transition: 0.3s ease;
+}
+.team-icon:hover{
+    fill: #2196F3;
+    
+}
 @keyframes tItemScale{
     0%{
 transform: scale(1);
@@ -348,6 +378,33 @@ display: flex;
 justify-content: center;
 margin: 10px;
 margin-bottom: 30px;
+}
+.clients{
+    margin-top: 94px;
+    margin-bottom: 94px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.client-title{
+    color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+width: 297.0px;
+height: 42.0px;
+margin-bottom: 50px;
+
+}
+.client-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer{
     background-color: #2F303A;
