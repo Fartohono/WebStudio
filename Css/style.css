@@ -147,7 +147,10 @@ height: 40.0px;
 .hero{
 padding-top: 118px;
 padding-bottom: 118px;
-background-image: url(./Img.png);
+background-image: url(./Img.png), linear-gradient( rgba(47, 48, 58, 0.40)
+);
+
+
 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -188,6 +191,7 @@ letter-spacing: 0.96px;
 display: flex;
 justify-content: center;
 align-items: center;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 border-radius: 5px;
     animation-duration: 3000ms;
 animation-name: hbScale;
@@ -382,9 +386,6 @@ margin-bottom: 30px;
 .clients{
     margin-top: 94px;
     margin-bottom: 94px;
-display: flex;
-justify-content: center;
-align-items: center;
 }
 
 .client-title{
@@ -482,6 +483,7 @@ font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
 border-radius: 4px;
+transition: 0.25s ease;
 }
 .portfolio-list{
 display: grid;
@@ -492,12 +494,14 @@ grid-template-columns: repeat(1, 1fr);
 background-color: var(--text-white);    
 border: 1px solid var(--portfolio-border);
 display: grid;
-
+transition: 0.3s ease;
 }
 .portfolio-item:hover{
     .over{
         opacity: 1;
     }
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+scale: 1.03;
 }
 .wrapper{
     position: relative;
@@ -574,6 +578,7 @@ color: var(--accent-color);
 .fillters-button:hover{
 color: var(--text-white);
 background-color: var(--accent-color);
+box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 .container{
     outline: 2px dashed red;
