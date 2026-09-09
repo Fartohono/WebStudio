@@ -147,10 +147,12 @@ height: 40.0px;
 .hero{
 padding-top: 118px;
 padding-bottom: 118px;
-background-image: url(./Img.png), linear-gradient( rgba(47, 48, 58, 0.40)
-);
+    background:linear-gradient(  rgba(47, 48, 58, 0.40),  rgba(47, 48, 58, 0.40)),
+    url(./Img.png);
 
-
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -472,6 +474,7 @@ display: flex;
     flex-direction: row;
 gap: 8px;
 }
+
 .fillters-button{
 background-color: #F5F4FA;
 color:var(--title-color);
@@ -484,6 +487,35 @@ line-height: 1.62;
 letter-spacing: 0.48px;
 border-radius: 4px;
 transition: 0.25s ease;
+white-space: nowrap;
+padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.fillters-item:nth-child(1) .fillters-button {
+    width: 73px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.fillters-item:nth-child(2) .fillters-button {
+    width: 125px;
+}
+
+.fillters-item:nth-child(3) .fillters-button {
+    width: 112px;
+}
+
+.fillters-item:nth-child(4) .fillters-button {
+    width: 103px;
+}
+
+.fillters-item:nth-child(5) .fillters-button {
+    width: 130px;
 }
 .portfolio-list{
 display: grid;
@@ -653,11 +685,11 @@ text-decoration: none;
 .hero{
 padding-top: 118px;
 padding-bottom: 118px;
-background-image: url(./Img.png);
+background:linear-gradient(  rgba(47, 48, 58, 0.40),  rgba(47, 48, 58, 0.40)),
+    url(./Img.png);
 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background: rgba(47, 48, 58, 0.40);
 
   display: flex;
   align-items: center;
@@ -764,7 +796,8 @@ gap: 50px;
     .hero{
 padding-top: 200px;
 padding-bottom: 200px;
-background-image: url(./Img.png) ;
+background:linear-gradient(  rgba(47, 48, 58, 0.40),  rgba(47, 48, 58, 0.40)),
+    url(./Img.png);
 background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
