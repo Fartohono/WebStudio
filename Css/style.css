@@ -793,6 +793,14 @@ list-style: none;
 gap: 50px;
 
     }
+    @media (min-device-pixel-ratio: 2),
+       (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('./desktop-img/Imghero-desktop@1x.webp');
+  }
+}
     .hero{
 padding-top: 200px;
 padding-bottom: 200px;
