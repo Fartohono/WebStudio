@@ -321,20 +321,39 @@ animation-name: tItemScale;
 
 }
 
+.team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    color: #afb1b8;
+
+    transition: background-color 250ms ease
+    ,color 250ms ease;
+}
+.team-link:hover,
+.team-link:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+}
 
 .team-items{
 display: flex;
 align-items: flex-end;
 justify-content: center;    
 padding-bottom: 30px;
-gap: 36px;
+gap: 10px;
 }
 .team-icon{
-    width: 20.0px;
-height: 20.0px;
-fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 transition: 0.3s ease;
-
 }
 .team-icon:hover{
     fill: #FFFFFF;
@@ -388,54 +407,63 @@ justify-content: center;
 margin: 10px;
 margin-bottom: 30px;
 }
-.clients{
+.clients {
     margin-top: 94px;
     margin-bottom: 94px;
 }
 
-.client-title{
+.client-title {
     color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
-width: 297.0px;
-height: 42.0px;
-margin-bottom: 50px;
-margin-left: auto;
-margin-right: auto;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+
+    width: 297px;
+    height: 42px;
+
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.client-item{
-    width: 170.0px;
-height: 92.0px;
-border-radius: 4px;
-border: 1px solid #AFB1B8;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: 0.3s ease;
-}
-.client-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.client-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-.client-icon{
-    width: 106.0px;
-height: 60.0px;
-fill: #AFB1B8;
-transition: 0.3s ease;
 
+.client-item {
+    width: 210px;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+
+    transition: border-color 250ms ease;
 }
-.client-item:hover{
-    border: 1px solid #2196F3;
-    .client-icon:hover{
-        fill: #2196F3;
-    }
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+
+    fill: #AFB1B8;
+
+    transition: fill 250ms ease;
+}
+
+.client-item:hover {
+    border-color: #2196F3;
+}
+
+.client-item:hover .client-icon {
+    fill: #2196F3;
 }
 .footer{
     background-color: #2F303A;
@@ -445,6 +473,9 @@ padding-bottom: 60px;
 }
 .footer-box{
     text-align: center;
+    display: flex;
+    align-items: flex-start;
+    
 }
 .contacts{
 list-style: none;
@@ -623,6 +654,108 @@ letter-spacing: 0.78px;
 text-decoration:none;
 
 }
+.footer-title{
+    width: 116.0px;
+height: 16.0px;
+    color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+background-color: rgba(255, 255, 255, 0.10);
+
+    transition: background-color 250ms ease
+    ,color 250ms ease;
+}
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+transition: 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+.footer-contacts{
+    margin-right: 70px;
+}
+.footer-social {
+    margin-right: 93px;
+}
+.footer-social {
+    padding-top: 12px;
+}
+.footer-items{
+display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.footer-subscribe{
+    width: 570.0px;
+        height: 86.0px;
+}
+.footer-subscribe-title{
+    width: 207.0px;
+        height: 16.0px;
+    color: #FFF;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+}
+.footer-input{
+    width: 358.0px;
+        height: 50.0px;
+border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    margin-right:8px;
+}
+.footer-button{
+    width: 200.0px;
+        height: 50.0px;
+        color: #FFF;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.96px;
+        border-radius: 4px;
+            background: #2196F3;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            text-align: center;
+}
+.footer-send-icon{
+    width: 24.0px;
+        height: 24.0px;
+        fill: #FFF;
+}
 .footer-logo-blue{
 color: var(--accent-color);  
 }  
@@ -751,6 +884,21 @@ text-transform: uppercase;
         
         grid-template-columns: repeat(2, 1fr);
     }
+    .client-item{
+width: 226.0px;
+height: 92.0px;
+border-radius: 4px;
+border: 1px solid #AFB1B8;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s ease;
+}
+.client-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 .header-menu{
 display: none;
 
@@ -760,6 +908,7 @@ display: none;
 display: none;
 
 }
+
 .portfolio-list{
 display: grid;
 gap: 30px;
@@ -770,6 +919,7 @@ background-color: var(--text-white);
 border: 1px solid var(--portfolio-border);
 }
 }
+
 .fillters{
     
 display: flex;
@@ -889,6 +1039,21 @@ padding-bottom: 94px;
 }
 .team-list{
     grid-template-columns: repeat(4, 1fr);
+}
+.client-item{
+    width: 170.0px;
+height: 92.0px;
+border-radius: 4px;
+border: 1px solid #AFB1B8;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s ease;
+}
+.client-icons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
 }
 .footer-box{
     text-align: start;
