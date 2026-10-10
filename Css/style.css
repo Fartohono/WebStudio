@@ -142,10 +142,159 @@ text-decoration: none;
 .header-link:hover::after{
     opacity: 1;
 }
+ /* Мобільне меню  */
 .header-menu{
     width: 40.0px;
 height: 40.0px;
 background-color: #FFF;
+}
+
+
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  padding: 48px 40px;
+
+  background-color: #fff;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 250ms ease,
+              visibility 250ms ease;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+}
+
+.mobile-menu-list a {
+color: #212121;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
+
+}
+
+.mobile-menu-list a:hover,
+.mobile-menu-list a:focus {
+  color: #2196f3;
+}
+
+.mobile-menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style: none;
+  margin-bottom: 64px;
+}
+
+.mobile-menu-tel {
+color: #2196F3;
+font-family: Roboto;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.68px;
+
+}
+
+.mobile-menu-email {
+color: #757575;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+
+}
+
+.mobile-menu-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.mobile-menu-socials li + li {
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.20);
+;
+}
+
+.mobile-menu-socials a {
+color: #2196F3;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0.36px;
+
+}
+
+
+.header-menu {
+  position: relative;
+  z-index: 1001;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header-mobile{
+  display: block;
+  transition: 0.3s ease;
+}
+.header-mobile:hover,:focus{
+fill: #2196F3;
+
+}
+
+
+.header.is-open .mobile-menu {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 .hero{
 padding-top: 118px;
