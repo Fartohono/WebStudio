@@ -66,42 +66,42 @@
           />
         </button>
         <div class="mobile-menu">
-  <nav class="mobile-menu-navigation">
-    <ul class="mobile-menu-list">
-      <li>
-        <a href="./index.html">Студія</a>
-      </li>
-      <li>
-        <a href="./portfolio.html">Портфоліо</a>
-      </li>
-      <li>
-        <a href="">Контакти</a>
-      </li>
-    </ul>
-  </nav>
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li>
+                <a href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
 
-  <div class="mobile-menu-bottom">
-    <ul class="mobile-menu-contacts">
-      <li>
-        <a class="mobile-menu-tel" href="tel:+380961111111">
-          +38 096 111 11 11
-        </a>
-      </li>
-      <li>
-        <a class="mobile-menu-email" href="mailto:info@devstudio.com">
-          info@devstudio.com
-        </a>
-      </li>
-    </ul>
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-menu-contacts">
+              <li>
+                <a class="mobile-menu-tel" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu-email" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
 
-    <ul class="mobile-menu-socials">
-      <li><a href="">Instagram</a></li>
-      <li><a href="">Twitter</a></li>
-      <li><a href="">Facebook</a></li>
-      <li><a href="">LinkedIn</a></li>
-    </ul>
-  </div>
-</div>
+            <ul class="mobile-menu-socials">
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -149,25 +149,53 @@
           <h2 class="gallery-title">Чим ми займаємося</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgdesk-desktop@1x.webp 1x,
+                    ./desktop-img/imgdesk-desktop@2x.webp 2x
+                  "
+                /> 
+              
               <img
                 class="gallery-img"
                 src="./Images/Keyboard.png"
                 alt="Coding"
               />
+              </picture>
             </li>
             <li class="gallery-item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgmob-desktop@1x.webp 1x,
+                    ./desktop-img/imgmob-desktop@2x.webp 2x
+                  "
+                /> 
               <img
                 class="gallery-img"
                 src="./Images/Phone.png"
                 alt="MultiDeviceSupport"
               />
+              </picture>
             </li>
             <li class="gallery-item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgdesign-desktop@1x.webp 1x,
+                    ./desktop-img/imgdesign-desktop@2x.webp 2x
+                  "
+                /> 
               <img
                 class="gallery-img"
                 src="./Images/ColorChange.png"
                 alt="Design"
               />
+              </picture>
             </li>
           </ul>
         </div>
@@ -177,11 +205,34 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./Images/ІгорДем'яненко.png"
-                alt="Product Designer"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./mobile-img/imgigor-mobile@1x.webp 1x,
+                    ./mobile-img/imgigor-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./tablet-img/imgigor-tablet@1x.webp 1x,
+                    ./tablet-img/imgigor-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgigor-desktop@1x.webp 1x,
+                    ./desktop-img/imgigor-desktop@2x.webp 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./Images/ІгорДем'яненко.png"
+                  alt="Product Designer"
+                />
+              </picture>
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-text">Product Designer</p>
               <ul class="team-items">
@@ -217,11 +268,34 @@
             </li>
 
             <li class="team-item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./mobile-img/imgolga-mobile@1x.webp 1x,
+                    ./mobile-img/imgolga-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./tablet-img/imgolga-tablet@1x.webp 1x,
+                    ./tablet-img/imgolga-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgolga-desktop@1x.webp 1x,
+                    ./desktop-img/imgolga-desktop@2x.webp 2x
+                  "
+                />
               <img
                 class="team-img"
                 src="./Images/ОльгаРєпіна.png"
                 alt="Frontend Developer"
               />
+              </picture>
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="team-items">
@@ -256,16 +330,40 @@
               </ul>
             </li>
             <li class="team-item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./mobile-img/imgmykola-mobile@1x.webp 1x,
+                    ./mobile-img/imgmykola-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./tablet-img/imgmykola-tablet@1x.webp 1x,
+                    ./tablet-img/imgmykola-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgmykola-desktop@1x.webp 1x,
+                    ./desktop-img/imgmykola-desktop@2x.webp 2x
+                  "
+                />
               <img
                 class="team-img"
                 src="./Images/МиколаТарасов.png"
                 alt="Marketing"
               />
+              </picture>
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-text">Marketing</p>
               <ul class="team-items">
                 <li class="team-elem">
                   <a href="" class="team-link">
+
                     <svg class="team-icon">
                       <use href="./Images/symbol-defs.svg#instagram"></use>
                     </svg>
@@ -295,11 +393,34 @@
               </ul>
             </li>
             <li class="team-item">
+             <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./mobile-img/imgmyhaylo-mobile@1x.webp 1x,
+                    ./mobile-img/imgmyhaylo-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./tablet-img/imgmyhaylo-tablet@1x.webp 1x,
+                    ./tablet-img/imgmyhaylo-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./desktop-img/imgmyhaylo-desktop@1x.webp 1x,
+                    ./desktop-img/imgmyhaylo-desktop@2x.webp 2x
+                  "
+                /> 
               <img
                 class="team-img"
                 src="./Images/МихайлоЄрмаков.png"
                 alt="UI Designer"
               />
+              </picture>
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-text">UI Designer</p>
               <ul class="team-items">
